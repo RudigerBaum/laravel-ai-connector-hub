@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Input\ArgvInput;
+
+require __DIR__.'/vendor/autoload.php';
+
+$status = \Illuminate\Foundation\Application::configureAndRunCommand(
+    new ArgvInput
+);
+
+exit($status);
